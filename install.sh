@@ -30,10 +30,9 @@ nmap <C-f> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 1
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
-nmap <>
-inoremap { {}
-inoremap ( ()
-inoremap [ []
+inoremap { {}<LEFT>
+inoremap ( ()<LEFT>
+inoremap [ []<LEFT>
 inoremap <C-s> <ESC>:w<CR>i
 nnoremap q :q<CR>
 nnoremap w :w<CR>
