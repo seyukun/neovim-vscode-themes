@@ -9,6 +9,16 @@ sudo chmod 755 ./install.sh
 ```
 
 # Usage
-- Ctrl+F - Search File
-- Ctrl+P - Previous Tab
-- Ctrl+N - Next Tab
+- Normal Mode
+ - Ctrl+F - Search File
+ - Ctrl+P - Previous Tab
+ - Ctrl+N - Next Tab
+ - Ctrl+S - Save
+ - w      - Save
+ - q      - exit
+- Insert Mode
+ - {      - {}
+ - (      - ()
+ - [      - []
+ - Ctrl+S - Save
+ - jk     - ESC
