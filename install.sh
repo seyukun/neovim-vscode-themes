@@ -30,7 +30,14 @@ nmap <C-f> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 1
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
-
+nmap <>
+inoremap { {}
+inoremap ( ()
+inoremap [ []
+inoremap <C-s> <ESC>:w<CR>i
+nnoremap q :q<CR>
+nnoremap w :w<CR>
+nnoremap <C-s> :w<CR>
 
 " Airline SETTINGS
 let g:airline_powerline_fonts = 1
@@ -51,7 +58,6 @@ colorscheme codedark
 
 " Esc SETTINGS
 inoremap jk <Esc>
-inoremap jj <Esc>
 
 " /// Enable Netrw (default file browser)
 " filetype plugin on
