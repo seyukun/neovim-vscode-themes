@@ -10,15 +10,15 @@ sudo chmod 755 ./install.sh
 
 # Usage
 - Normal Mode
- - Ctrl+F - Search File
- - Ctrl+P - Previous Tab
- - Ctrl+N - Next Tab
- - Ctrl+S - Save
- - w      - Save
- - q      - exit
+  * Ctrl+F - Search File
+  * Ctrl+P - Previous Tab
+  * Ctrl+N - Next Tab
+  * Ctrl+S - Save
+  * w      - Save
+  * q      - exit
 - Insert Mode
- - {      - {}
- - (      - ()
- - [      - []
- - Ctrl+S - Save
- - jk     - ESC
+  * {      - {}
+  * (      - ()
+  * \[      - []
+  * Ctrl+S - Save
+  * jk     - ESC
