@@ -1,7 +1,7 @@
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 mkdir -p ~/.config/nvim/
-cat <<EOF > ~/.config/nvim/init.vim
+cat << EOF > ~/.config/nvim/init.vim
 set number
 set guifont=DroidSansMono\ Nerd\ Font\ 13
 set guifontwide=DroidSansMono\ Nerd\ Font\ 13
