@@ -14,7 +14,7 @@ Second
 neovim
 ```
 ```txt
-:CocInstall
+:PlugInstall
 ```
 
 # Usage
