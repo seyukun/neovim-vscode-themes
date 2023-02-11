@@ -30,4 +30,3 @@ neovim
   * (      - ()
   * \[      - []
   * Ctrl+S - Save
-  * jk     - ESC
