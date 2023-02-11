@@ -13,6 +13,10 @@ set wildmenu
 set ruler
 set history=1000
 set encoding=utf8
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
 syntax enable
 " PLUGIN SETTINGS
 call plug#begin('~/.config/nvim/plugged')
@@ -23,6 +27,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'tomasiser/vim-code-dark'
+Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 call plug#end()
 
 function! s:check_back_space() abort
@@ -38,9 +43,10 @@ nmap <C-n> <Plug>AirlineSelectNextTab
 inoremap { {}<LEFT>
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
+inoremap < <><LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
-inoremap \` \`\`<LEFT>
+inoremap ` ``<LEFT>
 inoremap <C-s> <ESC>:w<CR>i
 nnoremap q :q<CR>
 nnoremap w :w<CR>
@@ -50,6 +56,8 @@ inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : <SID>check_back_space() 
 inoremap <expr> <ENTER> pumvisible() ? coc#_select_confirm() : "\<ENTER>"
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <S-A-f> <ESC>:call CocAction('format')<CR>i
+nnoremap <S-A-f> :call CocAction('format')<CR>
 
 " Airline SETTINGS
 let g:airline_powerline_fonts = 1
@@ -81,4 +89,9 @@ inoremap jk <Esc>
 " let g:netrw_preview = 1
 "/// SPLIT BORDER SETTINGS
 hi VertSplit cterm=none
+
+" ToggleTerm SETTINGS
+lua require("toggleterm").setup()
+inoremap <C-t> <ESC>:ToggleTerm<CR>
+nnoremap <C-t> :ToggleTerm<CR>
 EOF
