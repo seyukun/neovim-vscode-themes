@@ -2,10 +2,19 @@
 This repo provides an install script that easily makes neovim look and feel like vscode.
 
 # Install
+First 
 ```bash
 curl -O https://raw.githubusercontent.com/ES-Yukun/neovim-vscode-themes/main/install.sh
 sudo chmod +x ./install.sh
 ./install.sh
+```
+Second
+```bash
+# bash
+neovim
+```
+```txt
+:CocInstall
 ```
 
 # Usage
