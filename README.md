@@ -4,9 +4,7 @@ This repo provides an install script that easily makes neovim look and feel like
 # Install
 First 
 ```bash
-curl -O https://raw.githubusercontent.com/ES-Yukun/neovim-vscode-themes/main/install.sh
-sudo chmod +x ./install.sh
-./install.sh
+curl -O https://raw.githubusercontent.com/ES-Yukun/neovim-vscode-themes/main/install.sh | bash -c -
 ```
 Second
 ```bash
