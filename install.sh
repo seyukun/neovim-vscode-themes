@@ -46,7 +46,7 @@ inoremap [ []<LEFT>
 inoremap < <><LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
-inoremap \` \`\`<LEFT>
+inoremap ` ``<LEFT>
 inoremap <C-s> <ESC>:w<CR>i
 nnoremap q :q<CR>
 nnoremap w :w<CR>
