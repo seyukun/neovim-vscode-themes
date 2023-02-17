@@ -99,4 +99,8 @@ nnoremap <C-LEFT> <C-w><Left>
 nnoremap <C-RIGHT> <C-w><RIght>
 nnoremap <C-Up> <C-w><Up>
 nnoremap <C-Down> <C-w><Down>
+inoremap <C-z> <ESC>ui
+inoremap <C-y> <ESC>ri
+nnoremap <C-z> u
+nnoremap <C-y> r
 EOF
