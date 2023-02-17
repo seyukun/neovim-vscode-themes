@@ -40,24 +40,6 @@ nmap <C-f> :NERDTreeToggle<CR>
 let g:airline#extensions#tabline#enabled = 1
 nmap <C-p> <Plug>AirlineSelectPrevTab
 nmap <C-n> <Plug>AirlineSelectNextTab
-inoremap { {}<LEFT>
-inoremap ( ()<LEFT>
-inoremap [ []<LEFT>
-inoremap < <><LEFT>
-inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
-inoremap ` ``<LEFT>
-inoremap <C-s> <ESC>:w<CR>i
-nnoremap q :q<CR>
-nnoremap w :w<CR>
-nnoremap <C-s> :w<CR>
-nnoremap <C-RIGHT> <C-w>v<Plug>AirlineSelectPrevTab
-inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<Tab>" :coc#refresh()
-inoremap <expr> <ENTER> pumvisible() ? coc#_select_confirm() : "\<ENTER>"
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <S-A-f> <ESC>:call CocAction('format')<CR>i
-nnoremap <S-A-f> :call CocAction('format')<CR>
 
 " Airline SETTINGS
 let g:airline_powerline_fonts = 1
@@ -94,4 +76,27 @@ hi VertSplit cterm=none
 lua require("toggleterm").setup()
 inoremap <C-t> <ESC>:ToggleTerm<CR>
 nnoremap <C-t> :ToggleTerm<CR>
+
+" NORMAL SETTINGS
+inoremap { {}<LEFT>
+inoremap ( ()<LEFT>
+inoremap [ []<LEFT>
+inoremap < <><LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+inoremap ` ``<LEFT>
+inoremap <C-s> <ESC>:w<CR>i
+nnoremap q :q<CR>
+nnoremap w :w<CR>
+nnoremap <C-s> :w<CR>
+inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<Tab>" :coc#refresh()
+inoremap <expr> <ENTER> pumvisible() ? coc#_select_confirm() : "\<ENTER>"
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <S-A-f> <ESC>:call CocAction('format')<CR>i
+nnoremap <S-A-f> :call CocAction('format')<CR>
+nnoremap <C-LEFT> <C-w><Left>
+nnoremap <C-RIGHT> <C-w><RIght>
+nnoremap <C-Up> <C-w><Up>
+nnoremap <C-Down> <C-w><Down>
 EOF
