@@ -21,3 +21,5 @@ neovim
 ```txt
 :PlugInstall
 ```
+## Third
+you need to install fonts to your terminal
