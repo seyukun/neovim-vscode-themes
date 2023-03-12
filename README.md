@@ -16,7 +16,7 @@ curl -sL https://raw.githubusercontent.com/ES-Yukun/neovim-vscode-themes/main/in
 ## Second
 ```bash
 # bash
-neovim
+nvim
 ```
 ```txt
 :PlugInstall
